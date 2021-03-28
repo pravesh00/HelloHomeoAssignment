@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15sp"
+    android:paddingBottom="15sp"
+    android:layout_margin="5sp"
+    android:backgroundTint="@color/white">
+
+    <ImageView
+        android:id="@+id/imgPro"
+        android:layout_width="103dp"
+        android:layout_height="103dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.222"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Pravesh Choudhary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toEndOf="@+id/imgPro"
+        app:layout_constraintTop_toTopOf="@+id/imgPro" />
+
+    <TextView
+        android:id="@+id/txtAgent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="NASA"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtName"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txtName"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+    <TextView
+        android:id="@+id/txtWiki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:fontFamily="@font/roboto_medium"
+        android:text="www.wikipedia.com/pravesh_choudhary"
+
+        app:layout_constraintEnd_toEndOf="@+id/txtStatus"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txtName"
+        app:layout_constraintTop_toBottomOf="@+id/txtStatus"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Active"
+        android:textSize="20sp"
+
+        app:layout_constraintEnd_toEndOf="@+id/txtAgent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txtName"
+        app:layout_constraintTop_toBottomOf="@+id/txtAgent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
