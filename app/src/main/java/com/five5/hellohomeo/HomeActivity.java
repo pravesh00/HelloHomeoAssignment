@@ -72,7 +72,7 @@ public class HomeActivity extends AppCompatActivity {
                 connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
             loadFromInternet();
 
-            
+
         }
         else
         { loadFromDatabase();}
