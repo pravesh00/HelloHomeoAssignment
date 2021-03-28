@@ -55,7 +55,7 @@
         android:clickable="true"
         android:fontFamily="@font/roboto_medium"
         android:text="www.wikipedia.com/pravesh_choudhary"
-
+        android:autoLink="web"
         app:layout_constraintEnd_toEndOf="@+id/txtStatus"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/txtName"

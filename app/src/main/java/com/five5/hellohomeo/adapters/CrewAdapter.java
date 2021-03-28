@@ -51,13 +51,6 @@ public class CrewAdapter extends RecyclerView.Adapter<CrewAdapter.CrewViewHolder
         holder.agency.setText(current.getAgency());
         holder.wiki.setText(current.getWikipedia());
         Glide.with(context).load(current.getImage()).into(holder.proImage);
-        Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse(current.getWikipedia()));
-        holder.wiki.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               application.getApplicationContext().startActivity(intent);
-            }
-        });
 
     }
 
